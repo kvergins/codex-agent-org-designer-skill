@@ -1,0 +1,42 @@
+{
+  "name": "codex-agent-org-designer-skill",
+  "version": "0.1.0",
+  "description": "A Codex skill to design useful AI agent roles for a company before automating the wrong work.",
+  "license": "MIT",
+  "author": "Kris Vergins",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvergins/codex-agent-org-designer-skill.git"
+  },
+  "homepage": "https://github.com/kvergins/codex-agent-org-designer-skill#readme",
+  "bugs": {
+    "url": "https://github.com/kvergins/codex-agent-org-designer-skill/issues"
+  },
+  "bin": {
+    "codex-agent-org-designer-skill": "scripts/install.js"
+  },
+  "files": [
+    "agent-org-designer",
+    "scripts/install.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "codex",
+    "skill",
+    "ai-agents",
+    "agents",
+    "startup",
+    "automation",
+    "agent-design",
+    "agentic-workflows",
+    "operating-system",
+    "future-of-work"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
