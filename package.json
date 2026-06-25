@@ -1,7 +1,7 @@
 {
   "name": "codex-agent-org-designer-skill",
-  "version": "0.1.0",
-  "description": "A Codex skill to design useful AI agent roles for a company before automating the wrong work.",
+  "version": "0.2.0",
+  "description": "A Codex skill to plan and run the hybrid-workforce operating model: workflows made of loops, run by swappable agents and humans, gated by verifiers, improved by corrections.",
   "license": "MIT",
   "author": "Kris Vergins",
   "repository": {
@@ -30,6 +30,9 @@
     "automation",
     "agent-design",
     "agentic-workflows",
+    "hybrid-workforce",
+    "workflow-design",
+    "human-in-the-loop",
     "operating-system",
     "future-of-work"
   ],

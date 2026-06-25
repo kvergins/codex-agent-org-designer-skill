@@ -4,7 +4,7 @@ Use this when publishing the repo.
 
 ## GitHub Description
 
-Design the AI agents your company actually needs before automating the wrong work.
+Plan and run the hybrid-workforce operating model: workflows made of loops, run by swappable agents and humans, improved by corrections.
 
 ## GitHub Topics
 
@@ -13,11 +13,12 @@ codex
 codex-skill
 ai-agents
 agentic-workflows
-agent-design
-startup
+hybrid-workforce
+workflow-design
+human-in-the-loop
+agent-orchestration
 automation
 future-of-work
-operating-system
 ai-ops
 ```
 
@@ -27,54 +28,69 @@ Most teams are asking the wrong question:
 
 "What AI agents should we hire?"
 
-The better question is:
+The better question:
 
-"Where does our operating system lose momentum, and what owned loop could an agent improve?"
+"What process is slow, repeated, and valuable — and which loops can an agent run, which need a human, and what proves each step is done?"
 
-I built Agent Org Designer, a Codex skill that helps teams design useful AI agent roles before they automate the wrong work.
+The company process does not belong to any one agent vendor. OpenAI owns OpenAI runs. Anthropic owns Claude runs. The company owns the workflow.
 
-It turns company bottlenecks into:
-- agent portfolios
-- role charters
-- autonomy boundaries
-- routing and escalation maps
-- 14-day rollout plans
+I built Agent Org Designer, a Codex skill that helps teams plan AND run that workflow.
+
+It turns a business goal into:
+- a workflow graph of loops
+- loop cards (trigger, context, runner, output, verifier, escalation)
+- swappable runners (Claude, Codex, Cowork, OpenClaw, Copilot, internal, or human)
+- routing and human-input paths
+- work-packet/run templates and a correction log
+- 14-day rollout plans with a reverse gear
 
 Repo: https://github.com/kvergins/codex-agent-org-designer-skill
 
 ## Hacker News Title Options
 
-- Show HN: A Codex skill for designing useful AI agent roles
-- Show HN: Agent Org Designer, a skill for deciding what agents a company should build
-- Show HN: Design AI agents from company bottlenecks, not job titles
+- Show HN: A Codex skill for designing and running hybrid human-agent workflows
+- Show HN: Agent Org Designer — workflows made of loops, not a pile of AI employees
+- Show HN: Plan and run AI work as loops with verifiers and corrections
 
 ## Longer Launch Post
 
-The mistake I keep seeing with internal AI agents:
+The mistake I keep seeing with internal AI:
 
-Companies design them like fake employees.
-
-They make a "CEO agent", "analyst agent", "chief of staff agent", or "sales agent" before defining the actual operating loop the agent owns.
+Companies build a pile of agents — a "CEO agent", "analyst agent", "chief of staff agent" — before defining the actual process those agents run inside.
 
 That creates impressive demos and messy operations.
 
-The better pattern is:
+The better model: companies will not manage prompts or individual agents. They will manage **workflows made of loops**, run by agents and humans, improved by corrections.
 
 ```text
-trigger -> inspect context -> decide/act -> produce output -> trace outcome -> escalate when needed
+business goal
+-> workflow
+-> loop cards
+-> agent or human runners
+-> verifier
+-> done or human input
+-> correction
+-> improved workflow
 ```
+
+The runner is replaceable. The loop and its correction history persist. That is why you can swap Claude for Codex, OpenClaw, Copilot, an internal model, or a human without losing the process.
 
 So I built Agent Org Designer, a Codex skill that helps a team answer:
 
-- Which agents should we build first?
-- What should each agent own?
-- How autonomous should it be?
-- What actions are forbidden?
-- Who is the human owner?
-- When should it escalate?
-- How do we know it is working?
+- What workflow are we actually running?
+- Which agent or human owns each loop?
+- What proves each step is done (the verifier)?
+- When does a loop ask a human for input?
+- Where did the workflow get stuck?
+- What correction improves the next run?
 
-It is intentionally opinionated: agents should own throughput, not final accountability.
+It is intentionally opinionated:
+- No verifier, no autonomy.
+- Loops outlive runners.
+- Human attention is the scarce resource.
+- Corrections are the compounding moat.
+
+And it ships execution templates — work packets and a correction log — so you can run the workflow, not just diagram it.
 
 Install:
 
@@ -86,7 +102,8 @@ Repo: https://github.com/kvergins/codex-agent-org-designer-skill
 
 ## First Issue Ideas
 
-- Add more example outputs for support, sales, product, engineering, and operations teams
-- Add an enterprise-agent audit example
-- Add a checklist for deciding whether an agent should be L1, L2, or L3 autonomy
-- Add example prompts for founder-led sales, customer success, recruiting, and engineering teams
+- Add workflow-graph examples for support, sales, product, engineering, and operations
+- Add an enterprise audit example focused on missing verifiers and runner lock-in
+- Add a decision checklist for moving a loop up the autonomy ladder (and the reverse-gear trigger)
+- Add a correction-log starter that converts a week of human edits into loop upgrades
+- Add example runs (work packets) for founder-led sales, customer success, and engineering

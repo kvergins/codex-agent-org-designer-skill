@@ -1,4 +1,4 @@
 interface:
   display_name: "Agent Org Designer"
-  short_description: "Design useful AI agent roles"
-  default_prompt: "Use $agent-org-designer to design the agents our company should build next."
+  short_description: "Plan and run workflows made of loops, run by agents and humans"
+  default_prompt: "Use $agent-org-designer to map a workflow of loops our company should build next, with runners, verifiers, and escalation."
